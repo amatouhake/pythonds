@@ -53,20 +53,20 @@ From PowerShell:
 ```powershell
 git clone --branch study/answers https://github.com/amatouhake/pythonds.git
 Set-Location pythonds
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+py -3.12 -m venv .\study\.venv
+.\study\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\study\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
 Build and view the textbook:
 
 ```powershell
-.\.venv\Scripts\pretext.exe build web
-.\.venv\Scripts\pretext.exe view web
+.\study\.venv\Scripts\pretext.exe build web
+.\study\.venv\Scripts\pretext.exe view web
 ```
 
 Run a personal exercise directly with the virtual environment interpreter:
 
 ```powershell
-.\.venv\Scripts\python.exe .\study\exercises\path\to\exercise.py
+.\study\.venv\Scripts\python.exe .\study\exercises\path\to\exercise.py
 ```
