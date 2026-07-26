@@ -48,12 +48,14 @@ Remaining questions:
 
 ## Local setup on Windows
 
+The textbook build is pinned to PreTeXt 2.3.8, which depends on `lxml<5`. Use Python 3.12 for the build environment because `lxml 4.9.4` provides a Windows wheel for CPython 3.12 but not CPython 3.13. Python 3.13 can still be used separately for personal exercise files if desired.
+
 From PowerShell:
 
 ```powershell
 git clone --branch study/answers https://github.com/amatouhake/pythonds.git
 Set-Location pythonds
-py -3.13 -m venv .\study\.venv
+py -3.12 -m venv .\study\.venv
 .\study\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\study\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
