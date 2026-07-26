@@ -53,7 +53,7 @@ From PowerShell:
 ```powershell
 git clone --branch study/answers https://github.com/amatouhake/pythonds.git
 Set-Location pythonds
-py -3.12 -m venv .\study\.venv
+py -3.13 -m venv .\study\.venv
 .\study\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\study\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
